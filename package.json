@@ -1,0 +1,19 @@
+{
+  "name": "quals-2018-volgactf-customizer",
+  "version": "0.1.0",
+  "description": "Themis Quals default customization package for VolgaCTF 2018 Quals competition",
+  "main": "bin/server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VolgaCTF/quals-2018-volgactf-customizer.git"
+  },
+  "author": "Alexander Pyatkin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VolgaCTF/quals-2018-volgactf-customizer/issues"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "express": "^4.16.2"
+  }
+}
