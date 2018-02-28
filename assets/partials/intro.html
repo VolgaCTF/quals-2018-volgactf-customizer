@@ -1,6 +1,7 @@
 <h1>Hello there!</h1>
 <p>Welcome to VolgaCTF 2018 Quals!</p>
-<p><a href="https://volgactf.ru" target="_blank">VolgaCTF</a> is an international interuniversity open cybersecurity competition.</p>
-<% if (!contest.state === 4) { %>
+<p><a href="https://volgactf.ru" target="_blank">VolgaCTF</a> is an international interuniversity cybersecurity competition organised by a group of IT enthusiasts in collaboration with the <a href="http://www.ssau.ru/english/education/institutes_faculties/ime/" target="_blank">Institute of Informatics, Mathematics and Electronics of Samara University</a>.</p>
+<p>VolgaCTF 2018 Quals is an online competition. Top teams will be invited to participate in VolgaCTF 2018 Finals, which will be held in Samara, Russia.</p>
+<% if (contest.state !== 4) { %>
 <p>Interested? Read the <a href="/about" target="_blank">rules</a> and <a href="/team/signup">sign up</a> to take part in the competition!</p>
 <% } %>
