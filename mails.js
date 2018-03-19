@@ -32,4 +32,18 @@ router.get('/restore/html', function (req, res) {
   res.sendFile(path.join(__dirname, 'templates', 'restore.html.mustache'))
 })
 
+router.get('/invite_supervisor/subject', function (req, res) {
+  res.set('Content-Type', 'text/plain')
+  res.send('Welcome onboard!')
+})
+
+router.get('/invite_supervisor/plain', function (req, res) {
+  res.set('Content-Type', 'text/plain')
+  res.sendFile(path.join(__dirname, 'templates', 'invite_supervisor.plain.mustache'))
+})
+
+router.get('/invite_supervisor/html', function (req, res) {
+  res.set('Content-Type', 'text/html')
+  res.sendFile(path.join(__dirname, 'templates', 'invite_supervisor.html.mustache'))
+})
 module.exports = router
