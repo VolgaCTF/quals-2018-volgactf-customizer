@@ -2,6 +2,15 @@
 <p>Welcome to VolgaCTF 2018 Quals!</p>
 <p><a href="https://volgactf.ru" target="_blank">VolgaCTF</a> is an international interuniversity cybersecurity competition organised by a group of IT enthusiasts in collaboration with the <a href="http://www.ssau.ru/english/education/institutes_faculties/ime/" target="_blank">Institute of Informatics, Mathematics and Electronics of Samara University</a>.</p>
 <p>VolgaCTF 2018 Quals is an online competition. Top teams will be invited to participate in VolgaCTF 2018 Finals, which will be held in Samara, Russia.</p>
+<% if (contest.state === 1) { %>
+<p>The competition starts on <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=VolgaCTF+2018+Quals+%2F+start&iso=20180323T15" target="_blank">March 23 at 15:00 UTC</a> and lasts 48 hours.</p>
+<% } %>
+<% if (contest.state === 2 || contest.state === 3) { %>
+<p>The competition has already started and will finish on <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=VolgaCTF+2018+Quals+%2F+finish&iso=20180325T15" target="_blank">March 25 at 15:00 UTC</a>.</p>
+<% } %>
+<% if (contest.state === 4) { %>
+<p>The competition has finished on <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=VolgaCTF+2018+Quals+%2F+finish&iso=20180325T15" target="_blank">March 25 at 15:00 UTC</a></p>
+<% } %>
 <% if (contest.state !== 4) { %>
 <p>Interested? Read the <a href="/about" target="_blank">rules</a> and <a href="/team/signup">sign up</a> to take part in the competition!</p>
 <% } %>
